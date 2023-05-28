@@ -350,7 +350,6 @@ button {
 
 .container-card {
     padding: 32px 0;
-    /*display: flex;*/
     justify-content: center;
 } 
 
@@ -543,6 +542,73 @@ button {
     fill: var(--light-bg);
 }
 
+/*Subscribe*/
+
+.subscribe-container {
+    margin-left: auto;
+}
+
+.subscribe-wrapper {
+    display: flex;
+}
+
+.subscribe-form {
+    margin-right: 24px;
+}
+
+.subscribe-form-title {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.subscribe-form-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+}
+
+.subscribe-form-input::placeholder {
+    color: #FFFFFF;
+} 
+
+.btn-subscribe {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-brand-color);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border: none;
+    color: #FFFFFF;
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+    background-color: var(--pressed-btn);
+    color: #FFFFFF;
+}
+
+.subscribe-send-icon {
+    margin-left: 16px;
+    fill: #FFFFFF;
+}
+
 /*MODAL WiNDOW*/
 
 .backdrop {
@@ -570,7 +636,7 @@ button {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
 }
 
 .modal-close-btn {
@@ -583,7 +649,7 @@ button {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #E7E9FC;
+    background-color: var(--accent-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -604,28 +670,12 @@ button {
     fill: #FFFFFF;
 }
 
-
 .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-
-.group-title {
-    width: 100%;
-    font-weight: 700;
-}
-
-/*label*/
 .contact-form-field-wrapper,
 .contact-form-checkbox-wrapper {
     display: block;
