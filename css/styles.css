@@ -547,6 +547,7 @@ button {
 /*div*/
 .subscribe-container {
     margin-left: auto;
+    fill: var(--white-bg)
 }
 
 /*form*/
@@ -558,6 +559,13 @@ button {
 /*label*/
 .subscribe-form {
     margin-right: 24px;
+    display: block;
+    margin-bottom: 4px;
+    /*font-size: 12px;*/
+    /*line-height: 1.17;*/
+    /*letter-spacing: 0.04em;*/
+
+
 }
 
 /*p*/
@@ -566,37 +574,38 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--text-white);
     margin-bottom: 16px;
+    /*display: block;
+    box-sizing: border-box;*/
 }
 
 /*input*/
 .subscribe-form-input {
     width: 264px;
     height: 40px;
+    padding-left: 16px;
     border: 1px solid #FFFFFF;
     background-color: transparent;
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
-    padding-left: 16px;
+    color: var(--white-bg);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    outline: none;
+    /*outline: none;*/
 }
 
 .subscribe-form-input::placeholder {
     color: #FFFFFF;
 } 
 
-/*svg*/
-.subscribe-send-іcon {
-    margin-left: 16px;
-}
-
 /*button*/
 .btn-subscribe {
+    /*padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;*/
     min-width: 165px;
     height: 40px;
     display: flex;
@@ -608,20 +617,21 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    text-align: center;
     border: none;
     color: #FFFFFF;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-subscribe:hover,
 .btn-subscribe:focus {
     background-color: var(--pressed-btn);
-    color: #FFFFFF;
 }
 
 /*svg*/
 .subscribe-send-icon {
+    display: flex;
     margin-left: 16px;
-    color: #FFFFFF;
 }
 
 /*MODAL WiNDOW*/
@@ -646,7 +656,7 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
-    min-height: 584px;
+    min-height: 576px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -687,7 +697,7 @@ button {
 
 /*div-form*/
 .contact-form-wrapper {
-    margin-bottom: 8px;
+    margin-bottom: 16px
 }
 
 .text-form-modal {
@@ -791,8 +801,8 @@ button {
 
 /*label*/
 .contact-form-checkbox-wrapper {
-    /*display: flex;
-    align-items: center;*/
+    display: flex;
+    /*align-items: center;*/
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -813,11 +823,11 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    fill: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: transparent;
 }
 
 /*svg*/
