@@ -630,7 +630,6 @@ button {
 
 /*svg*/
 .subscribe-send-icon {
-    display: flex;
     margin-left: 16px;
 }
 
@@ -655,6 +654,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-bottom: 8px;
     width: 408px;
     min-height: 576px;
     background-color: #FCFCFC;
@@ -819,15 +819,13 @@ button {
 .modal-contact-form-policy {
     width: 16px;
     height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*svg*/
@@ -861,6 +859,12 @@ button {
 /* input(checkbox) + svg > use */
 .contact-form-checkbox .contact-form-own-checkbox .contact-form-checkmark-icon {
     opacity: 1;
+}
+
+.contact-form-checkbox:checked+.contact-form-checkbox-wrapper>.modal-contact-form-policy {
+    background-color: var(--btn);
+    border: none;
+    fill: var(--white);
 }
 
 /*Submit*/
