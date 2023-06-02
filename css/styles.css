@@ -754,6 +754,11 @@ button {
     border-color: var(--accent-color);
 }
 
+/*div comment*/
+.comment-form-wrapper {
+    margin-bottom: 16px;
+}
+
 /*textarea*/
 .contact-form-message {
     width: 100%;
@@ -866,7 +871,7 @@ button {
 .contact-form-checkbox:checked+.contact-form-checkbox-wrapper>.modal-contact-form-policy {
     background-color: var(--pressed-btn);
     border: none;
-    fill: var(--white);
+    fill: var(--white-bg);
 }
 
 /*Submit*/
