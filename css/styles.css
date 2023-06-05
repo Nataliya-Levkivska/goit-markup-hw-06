@@ -502,6 +502,10 @@ button {
     align-items: baseline;
 }
 
+.footer-right-side {
+    margin-right: 80px;
+}
+
 /*p right*/
 .footer-right-side-title {
     font-weight: 500;
@@ -558,7 +562,7 @@ button {
 
 /*label*/
 .subscribe-form {
-    margin-right: 24px;
+    /*margin-right: 24px;*/
     display: block;
     margin-bottom: 4px;
     /*font-size: 12px;*/
@@ -600,13 +604,11 @@ button {
 
 /*button*/
 .btn-subscribe {
-    /*padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 24px;
-    padding-right: 24px;*/
+    display: flex;
     min-width: 165px;
     height: 40px;
-    display: flex;
+    padding: 8px 24px 8px 24px;
+    gap: 16px;
     justify-content: center;
     align-items: center;
     background-color: var(--primary-brand-color);
@@ -674,7 +676,7 @@ button {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: var(--accent-color);
+    background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -775,8 +777,7 @@ button {
 }
 
 .contact-form-message:focus {
-    /*outline: none;*/
-    border-color: var(--accent-color);
+        border-color: var(--accent-color);
 }
 
 /*svg*/
@@ -792,11 +793,6 @@ button {
     fill: var(--accent-color);
 }
 
-/*.contact-form-input-wrapper {
-    position: relative;
-    display: block;
-}*/
-
 /*Checkbox*/
 
 /*div*/
@@ -807,13 +803,10 @@ button {
 
 /*label*/
 .contact-form-checkbox-wrapper {
-    /*display: flex;*/
-    /*display: block;*/
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--icon-logo);
-    /*position: relative;*/
 }
 
 /*input*/
@@ -824,14 +817,12 @@ button {
 
 /*span*/
 .modal-contact-form-policy {
-    display: inline-flex;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     justify-content: center;
     fill: transparent;
@@ -843,21 +834,17 @@ button {
     cursor: pointer;
 }
 
+/*input:focus+ svg*/
 .contact-form-checkbox:focus + .contact-form-own-checkbox {
     outline: 2px solid rgba(0, 0, 255, 0.5);
 }
 
-.contact-form-checkbox-wrapper + .modal-contact-form-policy {
-    background-color: var(--pressed-btn);
-    border: none;
-    fill: var(--white-bg);
-    border-color: var(--pressed-btn);
-}
 
 .privacy-policy {
     color: var(--accent-color);
 }
 
+/*input:checked+ label> span*/
 .contact-form-checkbox:checked + .contact-form-checkbox-wrapper > .modal-contact-form-policy {
     background-color: var(--pressed-btn);
     border: none;
@@ -865,7 +852,6 @@ button {
 }
 
 /*Submit*/
-
 .contact-form-submit {
     display: block;
     min-width: 169px;
@@ -881,7 +867,6 @@ button {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     border: none;
-    text-transform: uppercase;
     background-color: #4D5AE5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1019,7 +1004,6 @@ button {
 }
 
 .visually-hidden {
-    position: absolute;
     white-space: nowrap;
     width: 1px;
     height: 1px;
@@ -1027,8 +1011,11 @@ button {
     border: 0;
     padding: 0;
     clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+    clip-path: inset(100%);
+    margin: 1px;
+    position: absolute;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
 }
 
 /*li*/
